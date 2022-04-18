@@ -20,7 +20,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #f9fafb;
   margin-top: 60px;
+
 }
+  body{
+  background-image: url('./assets/road.jpg');
+
+}
+
 </style>

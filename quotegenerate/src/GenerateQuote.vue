@@ -1,10 +1,9 @@
 <template>
-          <div :style="{backgroundImage:'url(/images/logo.png)'}">
-
+    <div class="center">
 <h1>Random Quote Generator</h1>
-    <button @click="generate">New Quote</button>
     <p>{{ quote.quote }}</p>
-    <p>{{ quote.cite }}</p>
+    <p> {{ quote.cite }}</p>
+  <button class="btn" @click="generate">New Quote</button>
   </div>
 </template>
 
@@ -87,5 +86,35 @@ export default {
 </script>
 
 <style >
+.center {
+  margin: auto;
+  width: 50%;
+  border: 5px solid orange;
+  padding: 60px;
+}
+.btn {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
 
+ .btn:hover {
+  background-color: rgb(251, 180, 47);
+  color: rgb(0, 0, 0);
+}
+p{
+  background-color: orange;
+  color: black;
+  font-size: 18px;
+}
 </style>
